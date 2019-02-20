@@ -1,12 +1,13 @@
-#git add
+# git add
+
+[Reference](https//git-scm.com/docs/git-add)
 
 ## 構文
 
-git add [<options>] [--] <pathspec>...
+`git add [<options>] [--] <pathspec>...`
 
 - pathspecとは...
   - Gitに何かのパスを指定する方式のこと。ワイルドカードを使用することも可能。
-
 
 ## option
 
@@ -19,7 +20,7 @@ git add [<options>] [--] <pathspec>...
 | -e | --edit | 現在の差分を編集して適用します。|
 | -f | --force | 他の無視ファイルを追加することを許可する。|
 | -u | --update | 追跡ファイルを更新する |
-| * | --renormalize | 追跡対象ファイルのEOLを最正規化する(-uオプションを意味する) |
+| * | --renormalize | 追跡対象ファイルのEOLを再正規化する(-uオプションを意味する) |
 | -N | --intent-to-add | パスが後で追加される事実だけを記録する |
 | -A | --all | 全ての追跡されたファイルと追跡されていないファイルからの変更を追加する |
 | * | --ignore-removal | 作業ツリーから削除されたパスを無視する(--no-allと同じ) |
@@ -27,7 +28,3 @@ git add [<options>] [--] <pathspec>...
 | * | --ignore-errors | エラーが発生して追加できないファイルはスキップする |
 | * | --ignore-missing | dry-runを合わせて使用する。指定されたファイルのいずれかが無視されているかを確認できる |
 | * | --chmod (+/-)x | 指定されたファイルのパーミッションを変更する。インデックス上のファイルのみ対象で、ディスクのファイルをは変更されない |
-
-[Reference](https//git-scm.com/docs/git-add)
-
-
